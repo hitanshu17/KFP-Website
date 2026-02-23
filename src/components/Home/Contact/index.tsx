@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 const Contact = () => {
   const ref = useRef(null);
-  const inView = useInView(ref);
+  const inView = useInView(ref, { once: true });
 
   const animation = {
     initial: { y: 20, opacity: 0 },

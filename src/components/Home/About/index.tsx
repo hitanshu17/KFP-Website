@@ -5,7 +5,7 @@ import { aboutFeatures } from "@/app/api/data";
 
 const About = () => {
   const ref = useRef(null);
-  const inView = useInView(ref);
+  const inView = useInView(ref, { once: true });
 
   const topAnimation = {
     initial: { y: "-100%", opacity: 0 },
@@ -20,9 +20,9 @@ const About = () => {
   };
 
   return (
-    <section className="md:pt-28 pt-16" id="about">
+    <section className="md:pt-28 pt-16 overflow-hidden" id="about">
       <div className="container mx-auto lg:max-w-screen-xl px-4">
-        <div ref={ref} className="grid grid-cols-12 gap-12 items-start">
+        <div ref={ref} className="grid grid-cols-12 gap-6 md:gap-12 items-start">
           <motion.div
             {...topAnimation}
             className="lg:col-span-7 col-span-12"
