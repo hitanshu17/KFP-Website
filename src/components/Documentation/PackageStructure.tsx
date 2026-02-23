@@ -13,12 +13,12 @@ export const PackageStructure = () => {
   return (
     <div id="structure" className="md:scroll-m-[130px] scroll-m-28">
       <h3 className="text-2xl font-semibold mt-8 text-white">
-        Pacakge Structure
+        Project Structure
       </h3>
       <div className="rounded-md p-6 pt-3 border border-dark_border border-opacity-60 mt-6">
         <div className="flex items-center gap-4">
           <h5 className="text-base font-medium text-muted mt-3 mb-1">
-            Crypgo Tailwind NextJs Template
+            Kashmir Fruit Preservers – Next.js Project
           </h5>
         </div>
         <ul className="ps-0 md:ps-5 list-unstyled">

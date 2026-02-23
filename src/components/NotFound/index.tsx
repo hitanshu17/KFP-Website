@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { getImagePrefix } from "@/utils/utils";
 
 const NotFound = () => {
   return (
@@ -11,13 +10,12 @@ const NotFound = () => {
           <div className="w-full px-4 md:w-5/12 lg:w-6/12">
             <div className="relative mx-auto aspect-[129/138] max-w-[357px] text-center">
               <Image
-                src= {`${getImagePrefix()}images/404.svg`}
-                alt="image"
-                width={0}
-                height={0}
-                layout="responsive"
-                quality={100}
-                className="mx-auto max-w-full"
+                src="/images/404.svg"
+                alt="404 illustration"
+                width={357}
+                height={381}
+                className="mx-auto max-w-full h-auto"
+                priority={false}
               />
             </div>
           </div>
