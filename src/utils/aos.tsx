@@ -7,7 +7,8 @@ const Aoscompo = ({children}:any) => {
     useEffect(() => {
         AOS.init({
             duration: 800,
-            once: false,
+            // Animate elements only once when they first come into view
+            once: true,
         })
     }, [])
   return (
