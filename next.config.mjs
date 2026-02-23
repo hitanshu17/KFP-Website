@@ -1,15 +1,9 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
-
 const nextConfig = {
-  basePath: isProd ? "/Crypgo" : "",
-  assetPrefix: isProd ? "/Crypgo/" : "",
-  output: "export",
   images: {
+    // Keep images simple and compatible across hosts (including Vercel)
     unoptimized: true,
   },
 };
 
 export default nextConfig;
-
- 
