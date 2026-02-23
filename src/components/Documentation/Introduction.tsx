@@ -9,7 +9,6 @@ import axiosImg from "/public/images/documentation/axios.svg";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
 import { DocNavigation } from "./DocNavigation";
-import { getImagePrefix } from "@/utils/utils";
 
 export const Introduction = () => {
   const [docNavbarOpen, setDocNavbarOpen] = useState(false);
@@ -74,9 +73,9 @@ export const Introduction = () => {
                   className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-dark_border border-opacity-60"
                 >
                   <Image
-                    src= {`${getImagePrefix()}${item.img}`}
-                    alt="npm-package"
-                    className=" mx-auto w-10 h-10 "
+                    src={item.img}
+                    alt={`${item.packageName} logo`}
+                    className="mx-auto w-10 h-10"
                   />
                   <h5 className="text-2xl font-bold mt-3.5 text-white">{`v${item.version}`}</h5>
                   <p className="text-base font-medium text-muted">
@@ -88,8 +87,7 @@ export const Introduction = () => {
         </div>
         <div className="mt-5">
           <p className="text-base font-medium text-muted text-opacity-60">
-            Crypgo Tailwind NextJs Template is built with Tailwindcss and
-            Nextjs.
+            This site is built with Next.js and Tailwind CSS.
           </p>
           <p className="text-base font-medium text-muted text-opacity-60">
             These theme is ready to use and you can totally customize as per
