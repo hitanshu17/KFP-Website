@@ -1,36 +1,21 @@
-# Crypgo – Free Tailwind CSS & Next.js Website Template
+## Kashmir Fruit Preservers – Next.js Single Page App
 
-#### Preview
+This project is a customized single-page marketing site for **Kashmir Fruit Preservers**, built with **Next.js 14**, **React 18**, and **Tailwind CSS**.
 
- - [Demo](https://themewagon.github.io/Crypgo/)
+### Getting Started
 
-#### Download
- - [Download from ThemeWagon]( https://themewagon.com/themes/crypgo)
- 
- 
-## Getting Started
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-1. Clone from Github 
-```
-git clone https://github.com/themewagon/Crypgo.git
-```
-2. Install Dependencies
-```
-npm i
-```
-3. Run local server
-```
-npm run dev
-```
+2. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-## Author
+3. Open `http://localhost:3000` in your browser.
 
-Design and code is completely written by Getnext.jsTemplates design and development team.  
+### Deployment
 
-
-## License
-
- - Design and Code is Copyright &copy; [Getnext.jsTemplates](https://getnextjstemplates.com)
- - Licensed cover under [MIT]
- - Distributed by [ThemeWagon](https://themewagon.com)
-
+The app is configured to deploy cleanly on Vercel with the default Next.js settings (no `basePath` or `assetPrefix` required).
